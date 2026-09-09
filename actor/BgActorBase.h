@@ -3,7 +3,7 @@
 #include <actor/ActorState.h>
 #include <graphics/AnimModel.h>
 #include <collision/ActorBoxBgCollision.h>
-#include <../game/include/map_obj/TerrainEffects.h>
+#include <map_obj/TerrainEffects.h>
 
 class BgActorBase : public ActorMultiState { // Size: 0x11A78
     // Base class for Zone-Wide-Effect actors such as liquids
