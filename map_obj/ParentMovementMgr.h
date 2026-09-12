@@ -50,7 +50,7 @@ public:
         u8              movement_id;
         sead::Vector3f  pivot_center;
         bool            tilted;
-        bool            unk_8;
+        bool            _21;
         bool            upside_down;
         u32             movement_param;
         bool            gyroscopic;
@@ -61,18 +61,17 @@ public:
     ParentMovementMgr();
 
     /**
-     * @brief Links to movement controllers with the matching movement id and type mask
+     * @brief Links to movement controllers with the matching movement id and type mask.
      * @warning Using this and this only is known to cause problems with pivotal rotation controllers, use the linkPivotal function for pivotal rotation instead.
      */
     void link(const sead::Vector3f& position, u32 type_mask, u8 movement_id);
     void execute();
     u32 getTypeMask(ParentMovementType type);
     /**
-     * @brief Links to movement controllers with the matching movement id and type mask
+     * @brief Links to movement controllers with the matching movement id and type mask.
      * @note Cannot be used to make it gyroscopic.
      * @warning Using this and this only is known to cause problems with pivotal rotation controllers, use the linkPivotal function for pivotal rotation instead.
-     * ---
-     * Address: 0x0284B824
+     * @par Address: 0x0284B824
      */
     void linkPivotal(const sead::Vector3f& position, u32 movement_mask, s8 movement_id, const sead::Vector3f& pivot_center = sead::Vector3f(0.0f, 0.0f, 0.0f), bool tilted = false, bool unk_8 = false, bool upside_down = false, bool movement_param = true);
     // Address: 0x0284B7C8
@@ -131,19 +130,23 @@ public:
         return mMovementProperties;
     }
 
-    bool getPivotalUpsideDown() const {
+    bool getPivotalUpsideDown() const
+    {
         return mPivotalUpsideDown;
     }
 
-    bool getPivotalTilted() const {
+    bool getPivotalTilted() const
+    {
         return mPivotalTilted;
     }
 
-    bool getPivotalUnknown() const {
+    bool getPivotalUnknown() const
+    {
         return mPivotalUnknown;
     }
 
-    bool getPivotalGyroscopic() const {
+    bool getPivotalGyroscopic() const
+    {
         return mPivotalGyroscopic;
     }
 
@@ -182,19 +185,23 @@ public:
         mMovementProperties = properties;
     }
 
-    void setPivotalUpsideDown(bool pivotal_upside_down) {
+    void setPivotalUpsideDown(bool pivotal_upside_down)
+    {
         mPivotalUpsideDown = pivotal_upside_down;
     }
 
-    void setPivotalTilted(bool pivotal_tilted) {
+    void setPivotalTilted(bool pivotal_tilted)
+    {
         mPivotalTilted = pivotal_tilted;
     }
 
-    void setPivotalUnknown(bool pivotal_unknown) {
+    void setPivotalUnknown(bool pivotal_unknown)
+    {
         mPivotalUnknown = pivotal_unknown;
     }
 
-    void setPivotalGyroscopic(bool pivotal_gyroscopic) {
+    void setPivotalGyroscopic(bool pivotal_gyroscopic)
+    {
         mPivotalGyroscopic = pivotal_gyroscopic;
     }
 
