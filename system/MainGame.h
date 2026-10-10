@@ -99,9 +99,9 @@ public:
         return mReplayFlag.isOnBit(0);
     }
 
-    W6SwitchState getW6SwitchState() const
+    W6SwitchState getCSW6SwitchState() const
     {
-        return mW6SwitchState;
+        return mCSW6SwitchState;
     }
 
     SaveData::LevelStat& getLevelStat()
@@ -119,7 +119,7 @@ protected:
     u32                 _28;
     sead::BitFlag32     mReplayFlag;
     u32                 _30[(0x78 - 0x30) / sizeof(u32)];
-    W6SwitchState       mW6SwitchState;
+    W6SwitchState       mCSW6SwitchState;
     u32                 _7c[(0x31C - 0x7C) / sizeof(u32)];
     SaveData::LevelStat mLevelStat;
     u32                 _3d8[(0x21DDC - 0x3D8) / sizeof(u32)];
