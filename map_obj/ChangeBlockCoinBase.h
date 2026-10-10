@@ -35,12 +35,14 @@ public:
     void spawnItemUp() override;
     // Address: 0x02726634
     void spawnItemDown() override;
+    // Address: 0x02726644
     u32 getMultiCoinState() override;
 
     virtual void vf29C()
     {
     }
 
+    // Address: 0x027265BC
     virtual void setTileFlag();
 
     virtual u32 vf2AC()
