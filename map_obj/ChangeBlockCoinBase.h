@@ -14,6 +14,7 @@ public:
     class DrcTouchCB : public ActorCollisionDrcTouchCallback
     {
     public:
+        // Address: 0x027263B8
         bool bcSetTouchNormal(BgCollision* bg_collision, const sead::Vector2f& pos) override;
     };
     static_assert(sizeof(DrcTouchCB) == 4);
