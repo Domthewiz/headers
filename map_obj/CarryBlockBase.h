@@ -40,17 +40,17 @@ public:
     // initializeState_Carry   Address: 0x0271EB14
     // executeState_Carry      Address: 0x0271EB60
     // finalizeState_Carry     Address: 0x0271EBF0
-    DECLARE_STATE_VIRTUAL_ID_OVERRIDE(CarryObjBase, Carry);
+    DECLARE_STATE_VIRTUAL_ID_OVERRIDE(CarryObjBase, Carry)
     // StateID_Thrown          Address: 0x10220A70
     // initializeState_Thrown  Address: 0x0271E970
     // executeState_Thrown     Address: 0x0271E9AC
     // finalizeState_Thrown    Address: 0x0271EAE0
-    DECLARE_STATE_VIRTUAL_ID_OVERRIDE(CarryObjBase, Thrown);
+    DECLARE_STATE_VIRTUAL_ID_OVERRIDE(CarryObjBase, Thrown)
     // StateID_Unknown         Address: 0x10220AB8
     // initializeState_Unknown Address: 0x0271EC3C
     // executeState_Unknown    Address: 0x0271EC74
     // finalizeState_Unknown   Address: 0x0271EC78
-    DECLARE_STATE_VIRTUAL_ID_OVERRIDE(CarryObjBase, Unknown);
+    DECLARE_STATE_VIRTUAL_ID_OVERRIDE(CarryObjBase, Unknown)
 
     // Address: 0x0271E744
     void playerThrown(PlayerBase*) override;
