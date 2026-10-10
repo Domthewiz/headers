@@ -8,7 +8,7 @@ class CarryObjBase : public ActorState
 {
     // getRuntimeTypeInfoStatic()::typeInfo initialization guard variable   Address: 0x101EA8CC
     // getRuntimeTypeInfoStatic()::typeInfo                                 Address: 0x101EA8D0
-    SEAD_RTTI_OVERRIDE(CarryObjBase, ActorState);
+    SEAD_RTTI_OVERRIDE(CarryObjBase, ActorState)
 
 public:
     struct FukidashiInfo
@@ -69,22 +69,22 @@ public:
     // initializeState_Idle     Address: 0x02721F38
     // executeState_Idle        Address: 0x02721F70
     // finalizeState_Idle       Address: 0x02721FE4
-    DECLARE_STATE_VIRTUAL_ID_BASE(CarryObjBase, Idle);
+    DECLARE_STATE_VIRTUAL_ID_BASE(CarryObjBase, Idle)
     // StateID_Carry            Address: 0x10220BC0
     // initializeState_Carry    Address: 0x02721FFC
     // executeState_Carry       Address: 0x02722AC8
     // finalizeState_Carry      Address: 0x02722020
-    DECLARE_STATE_VIRTUAL_ID_BASE(CarryObjBase, Carry);
+    DECLARE_STATE_VIRTUAL_ID_BASE(CarryObjBase, Carry)
     // StateID_Thrown           Address: 0x10220BE4
     // initializeState_Thrown   Address: 0x027220CC
     // executeState_Thrown      Address: 0x02722ACC
     // finalizeState_Thrown     Address: 0x027220E4
-    DECLARE_STATE_VIRTUAL_ID_BASE(CarryObjBase, Thrown);
+    DECLARE_STATE_VIRTUAL_ID_BASE(CarryObjBase, Thrown)
     // StateID_Unknown          Address: 0x10220C08
     // initializeState_Unknown  Address: 0x02722124
     // executeState_Unknown     Address: 0x02722150
     // finalizeState_Unknown    Address: 0x02722154
-    DECLARE_STATE_VIRTUAL_ID_BASE(CarryObjBase, Unknown);
+    DECLARE_STATE_VIRTUAL_ID_BASE(CarryObjBase, Unknown)
 
     // Address: 0x02722338
     virtual void playerThrown(PlayerBase*);
